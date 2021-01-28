@@ -7,9 +7,9 @@ set -o nounset
 DEBUG=${DEBUG:=0}
 ((DEBUG == 1)) && set -o xtrace
 
-if ! command -v shellcheck &>/dev/null; then
-  echo >&2 'shellcheck command not found'
+command -v shellcheck &>/dev/null || {
+  echo >&2 "shellcheck command not found"
   exit 1
-fi
+}
 
 shellcheck "$@"

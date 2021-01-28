@@ -7,9 +7,9 @@ set -o nounset
 DEBUG=${DEBUG:=0}
 ((DEBUG == 1)) && set -o xtrace
 
-if ! command -v shfmt &>/dev/null; then
-  echo >&2 'shfmt command not found'
+command -v shfmt &>/dev/null || {
+  echo >&2 "shfmt command not found"
   exit 1
-fi
+}
 
 shfmt "$@"
