@@ -1,0 +1,13 @@
+---
+- id: shellcheck
+  name: Check shell script (shellcheck)
+  description: Check shell script with shellcheck
+  entry: shellcheck.sh
+  language: script
+  types: [shell]
+- id: shfmt
+  name: Check shell style (shfmt)
+  description: Check shell style with shfmt
+  entry: shfmt.sh
+  language: script
+  types: [shell]
