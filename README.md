@@ -1,6 +1,7 @@
 # pre-commit-shell hooks
 
 [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit)
+[![pre-commit](https://github.com/fauust/pre-commit-shell/workflows/pre-commit/badge.svg)](https://github.com/fauust/pre-commit-shell/actions)
 
 [pre-commit](http://pre-commit.com/) hooks which runs the following programs on
 shell script files:
