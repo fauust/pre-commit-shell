@@ -5,7 +5,7 @@ set -o pipefail
 set -o nounset
 
 DEBUG=${DEBUG:=0}
-(( DEBUG == 1 )) && set -o xtrace
+((DEBUG == 1)) && set -o xtrace
 
 if ! command -v shfmt &>/dev/null; then
   echo >&2 'shfmt command not found'
